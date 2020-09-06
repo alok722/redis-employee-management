@@ -1,0 +1,31 @@
+<h1>Add Employee</h1>
+{{#if error}} <span>{{error}}</span>{{/if}}
+<form method="POST" action="/user/add">
+  <div class="form-group">
+    <label>Employee ID</label>
+    <input type="number" name="empid" class="form-control" placeholder="Employee ID" required>
+  </div>
+  <div class="form-group">
+    <label>Full Name</label>
+    <input type="text" name="fullname" class="form-control" placeholder="Full Name" required>
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+  </div>
+  <div class="form-group">
+    <label>Mobile</label>
+    <input type="number" name="mobile" class="form-control" placeholder="Mobile Number" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Office Location</label>
+    <select class="form-control" name="location" required>
+      <option selected>Bangalore</option>
+      <option>Pune</option>
+      <option>Kolkata</option>
+      <option>Hyderabad</option>
+      <option>Delhi</option>
+    </select>
+  </div>
+  <input type="submit" class="btn btn-primary" value="Save">
+</form>

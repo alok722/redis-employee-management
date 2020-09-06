@@ -1,0 +1,11 @@
+<h2>Employee Details</h2>
+<h3>{{user.fullname}} [{{user.empid}}]</h3>
+<ul class="list-group">
+  <li class="list-group-item"><strong>Email: </strong>{{user.email}}</li>
+  <li class="list-group-item"><strong>Mobile: </strong>{{user.mobile}}</li>
+  <li class="list-group-item"><strong>Office Location: </strong>{{user.location}}</li>
+</ul>
+<a href="/" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Back</a>
+<form method="POST" action="/user/delete/{{user.id}}?_method=DELETE">
+  <input type="submit" class="btn btn-danger pull-right" value="Delete">
+</form>
